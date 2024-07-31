@@ -1,37 +1,4 @@
-### cats
-GET http://localhost:3000/cats
-Accept: application/json
-Content-Type: application/json
-
-### cats
-GET http://localhost:3000/cats?name=mukko
-Accept: application/json
-Content-Type: application/json
-
-### cats/1
-GET http://localhost:3000/cats/1
-Accept: application/json
-Content-Type: application/json
-
-### cats
-POST http://localhost:3000/cats
-Accept: application/json
-Content-Type: application/json
-
-{
-  "name": "ddddmojji",
-  "age": 4,
-  "bread": "11"
-}
-
-### cats
-PUT http://localhost:3000/cats
-Accept: application/json
-Content-Type: application/json
-
-{"id": "1", "name": "mukko"}
-
 ### users
-GET http://localhost:3000/users/profile
+GET http://localhost:3000/user/main
 Accept: application/json
 Content-Type: application/json
