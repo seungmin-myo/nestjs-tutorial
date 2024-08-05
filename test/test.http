@@ -1,4 +1,33 @@
-### users
-GET http://localhost:3000/user/main
+### getAllBoards
+GET http://localhost:3000/boards
+Accept: application/json
+Content-Type: application/json
+
+### getBoardById
+GET http://localhost:3000/boards/9e4dc420-52f0-11ef-b6c0-9574f21e27d9
+Accept: application/json
+Content-Type: application/json
+
+### createBoard
+POST http://localhost:3000/boards
+Accept: application/json
+Content-Type: application/json
+
+{
+  "title": "board 2",
+  "description": "description 2"
+}
+
+### udpateBoardStatus
+PATCH http://localhost:3000/boards/443e70f0-52f6-11ef-95e1-b7125c687670/status
+Accept: application/json
+Content-Type: application/json
+
+{
+  "status": "PRIVATE"
+}
+
+### deleteBoard
+DELETE http://localhost:3000/boards/443e70f0-52f6-11ef-95e1-b7125c687670
 Accept: application/json
 Content-Type: application/json
